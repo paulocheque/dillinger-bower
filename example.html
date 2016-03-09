@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-strict-di>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="./build/dillinger.min.css" rel="stylesheet">
+  <link href="./build/override.css" rel="stylesheet">
+
+</head>
+
+<body ng-controller="Base">
+  <iframe id="downloader" class="hide"></iframe>
+
+  <div class="wrapper">
+    <div class="page">
+      <div class="g mnone">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+
+              <div class="split split-editor">
+                  <div id="editor"></div>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="split split-preview">
+                    <div id="preview" preview debounce="150"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="./build/dillinger.min.js"></script>
+</body>
+</html>

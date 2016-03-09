@@ -1,0 +1,14 @@
+{
+  "name": "dillinger",
+  "version": "1.0.0",
+  "main": [
+    "bundle.js",
+    "styles/default.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "components"
+  ]
+}
